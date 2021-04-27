@@ -153,7 +153,6 @@ abstract_data_words = list(sent_to_words(abstract_data))
 text_data = papers.text_processed.values.tolist()
 text_data_words = list(sent_to_words(text_data))
 
-# remove stop words
 title_data_words = remove_stopwords(title_data_words)
 abstract_data_words = remove_stopwords(abstract_data_words)
 text_data_words = remove_stopwords(text_data_words)
@@ -163,40 +162,30 @@ print(abstract_data_words[:1][0][:30])
 print(text_data_words[:1][0][:30])
 
 
-# Create Dictionary
 id2word1 = corpora.Dictionary(title_data_words)
 id2word2 = corpora.Dictionary(abstract_data_words)
 id2word3 = corpora.Dictionary(text_data_words)
 
-# Create Corpus
 texts1 = title_data_words
 texts2 = abstract_data_words
 texts3 = text_data_words
 
-# Term Document Frequency
 corpus1 = [id2word1.doc2bow(text) for text in texts1]
 corpus2 = [id2word2.doc2bow(text) for text in texts2]
 corpus3= [id2word3.doc2bow(text) for text in texts3]
 
-# View
 print(corpus1[:1][0][:30])
 print(corpus2[:1][0][:30])
 print(corpus3[:1][0][:30])
 
 
 
-
-
-# number of topics
 num_topics = 10
 
-# Build LDA model
 lda_model1 = gensim.models.LdaMulticore(corpus=corpus1, id2word=id2word1, num_topics=num_topics)
 #lda_model2 = gensim.models.LdaMulticore(corpus=corpus2, id2word=id2word2, num_topics=num_topics)
 #lda_model3 = gensim.models.LdaMulticore(corpus=corpus3, id2word=id2word3, num_topics=num_topics)
 
-
-# Print the Keyword in the 10 topics
 pprint(lda_model1.print_topics())
 doc_lda = lda_model1[corpus1]
 
@@ -210,19 +199,18 @@ import pyLDAvis.gensim
 import pickle
 import pyLDAvis
 
-# Visualize the topics
+
 pyLDAvis.enable_notebook()
 
 LDAvis_data_filepath = os.path.join('./results/ldavis_prepared_'+str(num_topics))
 
-# # this is a bit time consuming - make the if statement True
-# # if you want to execute visualization prep yourself
+
 if 1 == 1:
     LDAvis_prepared = pyLDAvis.gensim.prepare(lda_model, corpus, id2word)
     with open(LDAvis_data_filepath, 'wb') as f:
         pickle.dump(LDAvis_prepared, f)
 
-# load the pre-prepared pyLDAvis data from disk
+
 with open(LDAvis_data_filepath, 'rb') as f:
     LDAvis_prepared = pickle.load(f)
 
