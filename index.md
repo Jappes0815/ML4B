@@ -3,11 +3,24 @@
 In our project we identify topics within scientific digital twin literature by using LDA for topic modeling.
 As we used the data with multiple topic numbers for titles, abstracts and texts seperately, we ended up with a variation of topic models we want to share with you:
 
+## Titles
+
 [Titles with 10 Topics](https://jappes0815.github.io/ML4B/topics_title_lda10.html)
+
+[Titles with 20 Topics](https://jappes0815.github.io/ML4B/topics_title_lda20.html)
+
+## Abstracts
 
 [Abstracts with 10 Topics](https://jappes0815.github.io/ML4B/topics_abstract_lda10.html)
 
+[Abstracts with 20 Topics](https://jappes0815.github.io/ML4B/topics_abstract_lda20.html)
+
+
+## Texts
+
 [Texts with 10 Topics](https://jappes0815.github.io/ML4B/topics_text_lda10.html)
+
+[Texts with 20 Topics](https://jappes0815.github.io/ML4B/topics_text_lda20.html)
 
 [Link button](https://jappes0815.github.io/ML4B/issue_lda_2016.html){: .btn .btn-outline }
 ____________________________________________________________________________________________________________________
