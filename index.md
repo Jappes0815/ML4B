@@ -1,6 +1,10 @@
 # Identify Topics in Scientific Digital Twin Literature
 
-[TestLink](https://github.com/Jappes0815/ML4B/edit/gh-pages/issues_lda.html)
+[Titles](https://jappes0815.github.io/ML4B/issue_lda.html)
+[Abstracts](https://jappes0815.github.io/ML4B/issue_lda_2016.html)
+
+
+
 
 You can use the [editor on GitHub](https://github.com/Jappes0815/ML4B/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
