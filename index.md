@@ -30,9 +30,28 @@ In order to approach the solution, we played around with the data and tried to g
 
 ![Image](https://jappes0815.github.io/ML4B/Papers_Years.PNG)
 
+We discovered that there are 2275 Participations in publications from 1927 Authors, that means on average four authors have worked on one article. From the list of names of authors with the most participation in publications, we can also see a tendency that points to many East Asian authors.
+
+![Image](https://jappes0815.github.io/ML4B/Papers_Authors.PNG)
+
 From the 554 documents there were 311 journal articles and 243 conference Paper. We considered to include the reference to the article type when classifying the articles, but since there are only two types and they are quite similar in relevance, a differentiation is hardly useful.
 
 ![Image](https://jappes0815.github.io/ML4B/Papers_Type.PNG)
+
+
+# Data Preparation
+
+As mentioned earlier we filtered for only relevant documents, before starting to set up our data for the model. We removed special characters, such as punctuation marks and set all words to lowercase. Afterwards we removed stopwords to keep only meaningful words for model and created dictionaries for the words from titles, abstracts and texts.
+
+# Evaluation
+
+We focused on titles, abstracts and the respective texts for our topic identification, so we 
+
+
+
+
+
+
 ## Titles
 
 [Titles with 10 Topics](https://jappes0815.github.io/ML4B/topics_title_lda10.html)
