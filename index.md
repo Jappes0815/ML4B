@@ -8,7 +8,7 @@ We did approaches with multiple topic numbers for titles, abstracts and texts se
 # Related Work
 
 
-#Data
+# Data
 
 ## 1. Loading
 
@@ -24,15 +24,15 @@ The document also contains articels that are not about Digital Twins, so we have
 
 Both the metadata and the JSON object data contain a lot of information that we consider irrelevant for subject identification. We focused on the titles, the abstract and the respective texts but for the exploration of the data we also searched in publisher names, published year and publication type for correlation with the topics.
 
-##3. Exploration 
+## 3. Exploration 
 
 In order to approach the solution, we played around with the data and tried to get a rough overview. First we looked at the year in which the articles were published. As you can easily see from the bar chart below, there were a lot of arcticel about Digital Twins in the years 2018 and 2019. We had no further information about the dataset, which means that it may be either that the selected data favored the respective years or that the topic was actually particularly popular in those years.
 
-![Image](https://jappes0815.github.io/ML4B/papers_years.png)
+![Image](https://jappes0815.github.io/ML4B/Papers_Years.PNG)
 
 From the 554 documents there were 311 journal articles and 243 conference Paper. We considered to include the reference to the article type when classifying the articles, but since there are only two types and they are quite similar in relevance, a differentiation is hardly useful.
 
-![Image](https://jappes0815.github.io/ML4B/papers_type.png)
+![Image](https://jappes0815.github.io/ML4B/Papers_Type.PNG)
 ## Titles
 
 [Titles with 10 Topics](https://jappes0815.github.io/ML4B/topics_title_lda10.html)
