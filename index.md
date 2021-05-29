@@ -15,15 +15,15 @@ The paper describes multiple experiments combining LDA with WordNet to get dynam
 
 This paper used LDA to identify sub-topics among two main topics in abstracts of articles. With this approach relations regarding trends and long time relationship between the main topics can be identified. We found this approach interesting because it could be a good addition to our work, as the identified topics could be combined to get a deeper knowledge about their relationship. 
 
-# Data preparation
+# Artifact Description
 
-## Filtering data
+We used Latent Dirichlet allocation (LDA) as topic modeling algorithm to process our data. It learns a sets of words that seem to occur together in documents. Those sets are described as topics, which can appear multinominal in documents. The model uses the observed documents and words to infer the hidden topic structure, creating per-document topic distributions, P(topic/document), and per-topic word distributions, P(word/topic).
 
-Our Data is a 31KB JSON Line document. The file contains information on 1014 scientific papers on the topic Digital Twins. Further processing of the extracted Text and Metadata will eventually be used to feed a topic modeling model, so we store the data in DataFrameworks to ensure that the program executes quickly. The document also contains articels that are not about Digital Twins, so we have dropped those. In the end we had a total amout of 554 relevant papers.
+# Evaluation
 
-Both the metadata and the JSON object data contain a lot of information that we consider irrelevant for subject identification. We focused on the titles, the abstract and the respective texts but for the exploration of the data we also searched in publisher names, published year and publication type for correlation with the topics.
+## Data Set description
 
-## Exploration 
+Our Data is a 31KB JSON Line document. The file contains information on 1014 scientific papers on the topic Digital Twins. Both the metadata and the JSON object data contain a lot of information that is not completly relevant for our project. We focused on the titles, the abstract and the respective texts but for the exploration of the data we also searched in publisher names, published year and publication type for correlation with the topics. The document also contains articels that are not about Digital Twins, so we have dropped those. In the end we had a total amout of 554 relevant papers. Further processing of the extracted Text and Metadata will eventually be used to feed a topic modeling model, so we stored the data in DataFrameworks to ensure that the program executes quickly. After we explored our filtered data, we removed special characters, such as punctuation marks and set all words to lowercase. Afterwards we removed stopwords to keep only meaningful words for model and created dictionaries for the words from titles, abstracts and texts.
 
 In order to approach the solution, we played around with the data and tried to get a rough overview. First we looked at the year in which the articles were published. As you can easily see from the bar chart below, there were a lot of arcticel about Digital Twins in the years 2018 and 2019. We had no further information about the dataset, which means that it may be either that the selected data favored the respective years or that the topic was actually particularly popular in those years.
 
@@ -37,16 +37,7 @@ From the 554 documents there were 311 journal articles and 243 conference Paper.
 
 ![Papers_Type](https://jappes0815.github.io/ML4B/Papers_Type.PNG)
 
-## Further preperation
-
-After we explored our filtered data, we removed special characters, such as punctuation marks and set all words to lowercase. Afterwards we removed stopwords to keep only meaningful words for model and created dictionaries for the words from titles, abstracts and texts.
-
-# Methodology
-
-We used Latent Dirichlet allocation (LDA) as topic modeling algorithm to process our data. It learns a sets of words that seem to occur together in documents. Those sets are described as topics, which can appear multinominal in documents. The model uses the observed documents and words to infer the hidden topic structure, creating per-document topic distributions, P(topic/document), and per-topic word distributions, P(word/topic).
-
-
-# Evaluation
+# Results
 
 We focused on titles, abstracts and the respective texts for our topic identification, so we used the model on each of them to see how much the results will vary between them. We used models with 10 and 20 topics on each to get an idea about the allocation of topics and afterwards tried to find a good topic number. The results were safed in html files and show both, the words used in each topic and the estimated frequency of terms within a topic in comparison with the overall term frequency.
 
