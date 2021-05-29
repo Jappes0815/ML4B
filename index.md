@@ -43,7 +43,7 @@ After we explored our filtered data, we removed special characters, such as punc
 
 # Methodology
 
-We used Latent Dirichlet allocation (LDA) as topic modeling algorithm to process our data. It learns a sets of words that seem to occur together in documents. Those sets are described as topics, which can appear multinominal in documents. The model uses the observed documents and words to infer the hidden topic structure, creating per-document topic distributions, P(topic|document), and per-topic word distributions, P(word|topic).
+We used Latent Dirichlet allocation (LDA) as topic modeling algorithm to process our data. It learns a sets of words that seem to occur together in documents. Those sets are described as topics, which can appear multinominal in documents. The model uses the observed documents and words to infer the hidden topic structure, creating per-document topic distributions, P(topic/document), and per-topic word distributions, P(word/topic).
 
 
 # Evaluation
@@ -58,12 +58,11 @@ We started by modeling [Titles with 10 Topics](https://jappes0815.github.io/ML4B
 
 We assumed that the models using abstracts might be the best approaches, as abstracts contain more information about a paper than the title, but usually also contain only relevant information, as it summarizes the text. In our first appoach [with 10 Topics](https://jappes0815.github.io/ML4B/topics_abstract_lda10.html) even more overlaps than in our approach with titles and the same number of topics. In another approach [with 20 Topics](https://jappes0815.github.io/ML4B/topics_abstract_lda20.html) the topics were also centered more than in our model using titles. We took several approaches with topic numbers between 5 and 15, but ended up with 10 topics to be the best amount of topics here, as it had the smallest overlays between the topics. 
 
-
 ### Texts
 
 As our texts dictionary contains more words than our dictionary for abstracts, we assumed that an [approach with 10 Topics](https://jappes0815.github.io/ML4B/topics_text_lda10.html) wouldn't distinguish enough, so we also tried [20 Topics](https://jappes0815.github.io/ML4B/topics_text_lda20.html) here. It appears that even with the huge amount of words within texts 20 topics is too much for this model, so we tried with numbers from 11 to 15, but despite having a bigger amount of terms, we still ended up with 10 topics being the best amount here.
 
 # Discussion
 
-Comparing our results from the different approaches, we came to the conclusion that abstracts might in fact be the best data source for topic modeling of papers, as there could be more topics identified than in titles only. Texts on the other hand don't provide more valueable topics while needing a lot more resources to model. 
+Comparing our results from the different approaches, we came to the conclusion that abstracts might in fact be the best data source for topic modeling of papers, as there could be more topics identified than in titles only. Texts on the other hand don't provide more valueable topics while needing a lot more resources to model.
 
