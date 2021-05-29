@@ -7,6 +7,13 @@ We did approaches with multiple topic numbers for titles, abstracts and texts se
 
 # Related Work
 
+[Mining Dynamics of Research Topics Based on the Combined LDA and WordNet](https://ieeexplore.ieee.org/abstract/document/8580532)
+
+The paper describes multiple experiments combining LDA with WordNet to get dynamics of research topics. WordNet is used as an external lexical knowledge source to improve the knowledge base on which the LDA is working. As we will probably also face the issue of putting knowledge to our LDA model this is a good source of further understanding of lexical structure.
+
+[Text mining for identifying topics in the literatures about adolescent substance use and depression](https://link.springer.com/article/10.1186/s12889-016-2932-1)
+
+This paper used LDA to identify sub-topics among two main topics in abstracts of articles. With this approach relations regarding trends and long time relationship between the main topics can be identified. We found this approach interesting because it could be a good addition to our work, as the identified topics could be combined to get a deeper knowledge about their relationship. 
 
 # Data
 
