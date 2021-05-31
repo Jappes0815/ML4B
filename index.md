@@ -62,6 +62,22 @@ We assumed that the models using abstracts might be the best approaches, as abst
 
 As our texts dictionary contains more words than our dictionary for abstracts, we assumed that an [approach with 10 Topics](https://jappes0815.github.io/ML4B/topics_text_lda10.html) wouldn't distinguish enough, so we also tried [20 Topics](https://jappes0815.github.io/ML4B/topics_text_lda20.html) here. It appears that even with the huge amount of words within texts 20 topics is too much for this model, so we tried with numbers from 11 to 15, but despite having a bigger amount of terms, we still ended up with 10 topics being the best amount here.
 
+### Further LDA models
+
+#### Year analysis
+- [2019 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2019.html)
+- [2018 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2018.html)
+- [2017 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2017.html)
+
+#### Author analysis
+- [Fai Tao text with 3 Topics](https://jappes0815.github.io/ML4B/text_Fei_Tao.html)
+- [Qiang Liu with 3 Topics](https://jappes0815.github.io/ML4B/text_Qiang_Liu.html)
+- [Luca Fumagalli with 3 Topics](https://jappes0815.github.io/ML4B/text_Luca_Fumagalli.html )
+
+#### Paper type analysis
+- [Conference paper text with 10 Topics](https://jappes0815.github.io/ML4B/text_conferencePaper.html)
+- [Journal article text with 10 Topics](https://jappes0815.github.io/ML4B/text_journalArticle.html)
+
 # Discussion
 
 Comparing our results from the different approaches, we came to the conclusion that abstracts might in fact be the best data source for topic modeling of papers, as there could be more topics identified than in titles only. Texts on the other hand don't provide more valueable topics while needing a lot more resources to model.
