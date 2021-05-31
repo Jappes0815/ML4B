@@ -3,7 +3,16 @@
 # Introduction
 
 In our project we identify topics within scientific digital twin literature by using LDA for topic modeling.
-We did approaches with multiple topic numbers for titles, abstracts and texts seperately and we ended up with a variation of topic models we want to share with you:
+We did approaches with multiple topic numbers for titles, abstracts and texts seperately and we ended up with a variation of topic models we want to share with you.
+
+
+## Read me
+
+The results link to the visualized Topic models. There you can explore and interpret the topic model. For the use of the interactive visualization tool please note:
+- The circles on the left are topics and can be clicked to identify the frequency of the words they contain. 
+- On the right side, the frequency of a word in a topic is shown with a red bar. 
+- Blue bars are used to show the frequency in the entire dataset.
+- Use the slide on the top right corner to adjust the ratio on red to blue.
 
 # Related Work
 
