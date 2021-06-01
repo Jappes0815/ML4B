@@ -12,9 +12,9 @@ The analysis down below link to the visualized Topic models. There you can explo
 
 <img src="https://jappes0815.github.io/ML4B/LDAvis_picture.png" alt="hi" class="inline" width="700" height="400"/>
 
-### Further feature selection
+## Further feature selection
 
-#### Year analysis
+### Year analysis
 - [2019 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2019.html)
 - [2019 text with 5 Topics](https://jappes0815.github.io/ML4B/text_2019_5.html)
 - [2018 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2018.html)
@@ -22,12 +22,12 @@ The analysis down below link to the visualized Topic models. There you can explo
 - [2017 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2017.html)
 - [2017 text with 5 Topics](https://jappes0815.github.io/ML4B/text_2017_5.html)
 
-#### Author analysis
+### Author analysis
 - [Fai Tao text with 3 Topics](https://jappes0815.github.io/ML4B/text_Fei_Tao.html)
 - [Qiang Liu with 3 Topics](https://jappes0815.github.io/ML4B/text_Qiang_Liu.html)
 - [Luca Fumagalli with 3 Topics](https://jappes0815.github.io/ML4B/text_Luca_Fumagalli.html )
 
-#### Paper type analysis
+### Paper type analysis
 - [Conference paper text with 10 Topics](https://jappes0815.github.io/ML4B/text_conferencePaper.html)
 - [Conference paper text with 5 Topics](https://jappes0815.github.io/ML4B/text_conferencePaper_5.html)
 - [Journal article text with 10 Topics](https://jappes0815.github.io/ML4B/text_journalArticle.html)
