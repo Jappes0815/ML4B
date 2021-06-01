@@ -6,7 +6,7 @@ In our project we identify topics within scientific digital twin literature by u
 We did approaches with multiple topic numbers for titles, abstracts and texts seperately and we ended up with a variation of topic models we want to share with you.
 
 
-## Read me
+## Read me when analysing the models
 
 The results link to the visualized Topic models. There you can explore and interpret the topic model. For the use of the interactive visualization tool please note:
 - The circles on the left are topics and can be clicked to identify the frequency of the words they contain. 
