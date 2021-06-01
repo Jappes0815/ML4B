@@ -45,7 +45,7 @@ df_year = pd.DataFrame(year)
 df_type = pd.DataFrame(type)
 df_name = pd.DataFrame(name)
 print(df_type.value_counts())
-papers = pd.concat([df_year[0:5], df_metadata.title[0:5], df_metadata.abstract[0:5], df_pText[0:5]], axis=1 )
+papers = pd.concat([df_year, df_metadata.title, df_metadata.abstract, df_pText], axis=1 )
 
 
 papers['title_processed'] = \
@@ -106,7 +106,7 @@ plt.title("Top 10 authors with most articles")
 #    plt.text(index, value, str(value))
 plt.show()
 
-"""long_string_title = ','.join(list(papers['title_processed'].values))
+long_string_title = ','.join(list(papers['title_processed'].values))
 long_string_abstract = ','.join(list(papers['abstract_processed'].values))
 long_string_text = ','.join(list(papers['text_processed'].values))
 
@@ -129,9 +129,11 @@ plt.axis("off")
 plt.show()
 plt.imshow(wordcloud_text.to_image())
 plt.axis("off")
-plt.show()"""
+plt.show()
 
-"""
+import nltk
+nltk.download('stopwords')
+
 stop_words = stopwords.words('english')
 stop_words.extend(['threee','well','based','twin','digital','from', 'subject', 're', 'edu', 'use'])
 
@@ -153,6 +155,7 @@ abstract_data_words = list(sent_to_words(abstract_data))
 text_data = papers.text_processed.values.tolist()
 text_data_words = list(sent_to_words(text_data))
 
+# remove stop words
 title_data_words = remove_stopwords(title_data_words)
 abstract_data_words = remove_stopwords(abstract_data_words)
 text_data_words = remove_stopwords(text_data_words)
@@ -162,29 +165,39 @@ print(abstract_data_words[:1][0][:30])
 print(text_data_words[:1][0][:30])
 
 
+# Create Dictionary
 id2word1 = corpora.Dictionary(title_data_words)
 id2word2 = corpora.Dictionary(abstract_data_words)
 id2word3 = corpora.Dictionary(text_data_words)
 
+# Create Corpus
 texts1 = title_data_words
 texts2 = abstract_data_words
 texts3 = text_data_words
 
+# Term Document Frequency
 corpus1 = [id2word1.doc2bow(text) for text in texts1]
 corpus2 = [id2word2.doc2bow(text) for text in texts2]
 corpus3= [id2word3.doc2bow(text) for text in texts3]
 
-print(corpus1[:1][0][:30])
-print(corpus2[:1][0][:30])
+# View
+#print(corpus1[:1][0][:30])
+#print(corpus2[:1][0][:30])
 print(corpus3[:1][0][:30])
 
 
 
-num_topics = 10
 
+
+# number of topics
+num_topics = 20
+
+# Build LDA model
 lda_model1 = gensim.models.LdaMulticore(corpus=corpus1, id2word=id2word1, num_topics=num_topics)
-#lda_model2 = gensim.models.LdaMulticore(corpus=corpus2, id2word=id2word2, num_topics=num_topics)
-#lda_model3 = gensim.models.LdaMulticore(corpus=corpus3, id2word=id2word3, num_topics=num_topics)
+lda_model2 = gensim.models.LdaMulticore(corpus=corpus2, id2word=id2word2, num_topics=num_topics)
+lda_model3 = gensim.models.LdaMulticore(corpus=corpus3, id2word=id2word3, num_topics=num_topics)
+
+
 
 pprint(lda_model1.print_topics())
 doc_lda = lda_model1[corpus1]
@@ -195,26 +208,28 @@ doc_lda = lda_model2[corpus2]
 pprint(lda_model3.print_topics())
 doc_lda = lda_model3[corpus3]
 
-import pyLDAvis.gensim
+
+import gensim
 import pickle
 import pyLDAvis
-
-
+import os
+import pyLDAvis
+import pyLDAvis.gensim_models as gensimvis
 pyLDAvis.enable_notebook()
 
-LDAvis_data_filepath = os.path.join('./results/ldavis_prepared_'+str(num_topics))
+vis1 = gensimvis.prepare(lda_model1, corpus1, id2word1)
+#vis1
+vis2 = gensimvis.prepare(lda_model2, corpus2, id2word2)
+#vis2
+vis3 = gensimvis.prepare(lda_model3, corpus3, id2word3)
+#vis3
+    
+pyLDAvis.save_html(vis1, "issue_lda1.html")
+pyLDAvis.save_html(vis2, "issue_lda2.html")
+pyLDAvis.save_html(vis3, "issue_lda3.html")
+#pyLDAvis.save_json(vis_data, "issue_lda.json")
+#pyLDAvis.save_html(vis_data, "issue_lda_2016.html")
+#pyLDAvis.save_json(vis_data, "issue_lda_2016.json")
 
+    
 
-if 1 == 1:
-    LDAvis_prepared = pyLDAvis.gensim.prepare(lda_model, corpus, id2word)
-    with open(LDAvis_data_filepath, 'wb') as f:
-        pickle.dump(LDAvis_prepared, f)
-
-
-with open(LDAvis_data_filepath, 'rb') as f:
-    LDAvis_prepared = pickle.load(f)
-
-pyLDAvis.save_html(LDAvis_prepared, './results/ldavis_prepared_'+ str(num_topics) +'.html')
-
-LDAvis_prepared
-"""
