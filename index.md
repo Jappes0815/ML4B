@@ -9,8 +9,8 @@ The results link to the visualized Topic models. There you can explore and inter
 - Blue bars are used to show the frequency in the entire dataset.
 - Use the slide on the top right corner to adjust the ratio on red to blue.
 
-!https://jappes0815.github.io/ML4B/LDAvis_picture.png
 
+<img src="https://jappes0815.github.io/ML4B/LDAvis_picture.png" alt="hi" class="inline"/>
 
 ### Further feature selection
 
