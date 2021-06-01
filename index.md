@@ -62,7 +62,8 @@ We assumed that the models using abstracts might be the best approaches, as abst
 
 As our texts dictionary contains more words than our dictionary for abstracts, we assumed that an [approach with 10 Topics](https://jappes0815.github.io/ML4B/topics_text_lda10.html) wouldn't distinguish enough, so we also tried [20 Topics](https://jappes0815.github.io/ML4B/topics_text_lda20.html) here. It appears that even with the huge amount of words within texts 20 topics is too much for this model, so we tried with numbers from 11 to 15, but despite having a bigger amount of terms, we still ended up with 10 topics being the best amount here.
 
-### Further LDA models
+
+### Further feature selection
 
 #### Year analysis
 - [2019 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2019.html)
@@ -82,6 +83,7 @@ As our texts dictionary contains more words than our dictionary for abstracts, w
 - [Conference paper text with 5 Topics](https://jappes0815.github.io/ML4B/text_conferencePaper_5.html)
 - [Journal article text with 10 Topics](https://jappes0815.github.io/ML4B/text_journalArticle.html)
 - [Journal article text with 5 Topics](https://jappes0815.github.io/ML4B/text_journalArticle_5.html)
+- 
 
 # Discussion
 
