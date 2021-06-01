@@ -48,5 +48,5 @@ The analysis down below link to the visualized Topic models. There you can explo
 
 <a href="https://jappes0815.github.io/ML4B/Papers_Type.PNG"><img src="https://jappes0815.github.io/ML4B/Papers_Type.PNG" width= 300 hight= 140/></a>
 
-## [gitbook](https://app.gitbook.com/@fau/s/ml4b/research-projects/identify-topics-frank-and-nazar)
+## [Back to the gitbook page](https://app.gitbook.com/@fau/s/ml4b/research-projects/identify-topics-frank-and-nazar)
 
