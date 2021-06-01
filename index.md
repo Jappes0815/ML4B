@@ -83,7 +83,7 @@ As our texts dictionary contains more words than our dictionary for abstracts, w
 - [Conference paper text with 5 Topics](https://jappes0815.github.io/ML4B/text_conferencePaper_5.html)
 - [Journal article text with 10 Topics](https://jappes0815.github.io/ML4B/text_journalArticle.html)
 - [Journal article text with 5 Topics](https://jappes0815.github.io/ML4B/text_journalArticle_5.html)
-- 
+
 
 # Discussion
 
