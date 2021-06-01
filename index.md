@@ -21,18 +21,18 @@ The analysis down below link to the visualized Topic models. There you can explo
 - [2018 text with 5 Topics](https://jappes0815.github.io/ML4B/text_2018_5.html)
 - [2017 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2017.html)
 - [2017 text with 5 Topics](https://jappes0815.github.io/ML4B/text_2017_5.html)
-<img src="https://jappes0815.github.io/ML4B/Papers_Years.PNG" alt="hi" class="inline" width="700" height="400"/>
+<img src="https://jappes0815.github.io/ML4B/Papers_Years.PNG" alt="hi" class="inline"/>
 
 ### Author analysis
 - [Fai Tao text with 3 Topics](https://jappes0815.github.io/ML4B/text_Fei_Tao.html)
 - [Qiang Liu with 3 Topics](https://jappes0815.github.io/ML4B/text_Qiang_Liu.html)
 - [Luca Fumagalli with 3 Topics](https://jappes0815.github.io/ML4B/text_Luca_Fumagalli.html )
-<img src="https://jappes0815.github.io/ML4B/Papers_Authors.PNG" alt="hi" class="inline" width="700" height="400"/>
+<img src="https://jappes0815.github.io/ML4B/Papers_Authors.PNG" alt="hi" class="inline"/>
 
 ### Paper type analysis
 - [Conference paper text with 10 Topics](https://jappes0815.github.io/ML4B/text_conferencePaper.html)
 - [Conference paper text with 5 Topics](https://jappes0815.github.io/ML4B/text_conferencePaper_5.html)
 - [Journal article text with 10 Topics](https://jappes0815.github.io/ML4B/text_journalArticle.html)
 - [Journal article text with 5 Topics](https://jappes0815.github.io/ML4B/text_journalArticle_5.html)
-<img src="https://jappes0815.github.io/ML4B/Papers_Type.PNG" alt="hi" class="inline" width="700" height="400"/>
+<img src="https://jappes0815.github.io/ML4B/Papers_Type.PNG" alt="hi" class="inline"/>
 
