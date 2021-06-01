@@ -1,9 +1,9 @@
 # Identify Topics in Scientific Digital Twin Literature
 
 
-## Read me when analysing the models
+## Instructions
 
-The analysis down below link to the visualized Topic models. There you can explore and interpret the topic model. For the use of the interactive visualization tool please note:
+The analysis down below link to the visualized Topic models. There you can explore and interpret the topic model. For analysing the models of the interactive visualization tool please note:
 - The circles on the left are topics and can be clicked to identify the frequency of the words they contain. 
 - On the right side, the frequency of a word in a topic is shown with a red bar. 
 - Blue bars are used to show the frequency in the entire dataset.
