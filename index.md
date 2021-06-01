@@ -14,6 +14,15 @@ The analysis down below link to the visualized Topic models. There you can explo
 
 ## Further feature selection
 
+### Paper analysis
+- [2019 title with 20 Topics](https://jappes0815.github.io/ML4B/topics_title_lda20.html)
+- [2019 title with 10 Topics](https://jappes0815.github.io/ML4B/topics_title_lda10.html)
+- [2019 title with 8 Topics](https://jappes0815.github.io/ML4B/topics_title_lda08.html)
+- [2019 abstract with 20 Topics](https://jappes0815.github.io/ML4B/topics_text_lda20.html)
+- [2019 abstract with 10 Topics](https://jappes0815.github.io/ML4B/topics_text_lda10.html)
+- [2019 text with 20 Topics](https://jappes0815.github.io/ML4B/topics_abstract_lda20.html)
+- [2019 text with 10 Topics](https://jappes0815.github.io/ML4B/topics_abstract_lda10.html)
+
 ### Year analysis
 - [2019 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2019.html)
 - [2019 text with 5 Topics](https://jappes0815.github.io/ML4B/text_2019_5.html)
