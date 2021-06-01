@@ -10,7 +10,7 @@ The analysis down below link to the visualized Topic models. There you can explo
 - Use the slide on the top right corner to adjust the ratio on red to blue.
 
 
-<img src="https://jappes0815.github.io/ML4B/LDAvis_picture.png" alt="hi" class="inline"/>
+<img src="https://jappes0815.github.io/ML4B/LDAvis_picture.png"/>
 
 ## Further feature selection
 
@@ -23,8 +23,6 @@ The analysis down below link to the visualized Topic models. There you can explo
 - [2019 text with 20 Topics](https://jappes0815.github.io/ML4B/topics_abstract_lda20.html)
 - [2019 text with 10 Topics](https://jappes0815.github.io/ML4B/topics_abstract_lda10.html)
 
-<img src="https://jappes0815.github.io/ML4B/wordcloud_abstract.png" alt="hi" class="inline"/>
-
 ### Year analysis
 - [2019 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2019.html)
 - [2019 text with 5 Topics](https://jappes0815.github.io/ML4B/text_2019_5.html)
@@ -33,14 +31,14 @@ The analysis down below link to the visualized Topic models. There you can explo
 - [2017 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2017.html)
 - [2017 text with 5 Topics](https://jappes0815.github.io/ML4B/text_2017_5.html)
 
-<img src="https://jappes0815.github.io/ML4B/Papers_Years.PNG" alt="hi" class="inline"/>
+<img src="https://jappes0815.github.io/ML4B/Papers_Years.PNG" width= 300 hight= 140/>
 
 ### Author analysis
 - [Fai Tao text with 3 Topics](https://jappes0815.github.io/ML4B/text_Fei_Tao.html)
 - [Qiang Liu with 3 Topics](https://jappes0815.github.io/ML4B/text_Qiang_Liu.html)
 - [Luca Fumagalli with 3 Topics](https://jappes0815.github.io/ML4B/text_Luca_Fumagalli.html )
 
-<img src="https://jappes0815.github.io/ML4B/Papers_Authors.PNG" alt="hi" class="inline"/>
+<img src="https://jappes0815.github.io/ML4B/Papers_Authors.PNG"/>
 
 ### Paper type analysis
 - [Conference paper text with 10 Topics](https://jappes0815.github.io/ML4B/text_conferencePaper.html)
@@ -48,5 +46,5 @@ The analysis down below link to the visualized Topic models. There you can explo
 - [Journal article text with 10 Topics](https://jappes0815.github.io/ML4B/text_journalArticle.html)
 - [Journal article text with 5 Topics](https://jappes0815.github.io/ML4B/text_journalArticle_5.html)
 
-<img src="https://jappes0815.github.io/ML4B/Papers_Type.PNG" alt="hi" class="inline"/>
+<img src="https://jappes0815.github.io/ML4B/Papers_Type.PNG"/>
 
