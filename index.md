@@ -31,14 +31,14 @@ The analysis down below link to the visualized Topic models. There you can explo
 - [2017 text with 10 Topics](https://jappes0815.github.io/ML4B/text_2017.html)
 - [2017 text with 5 Topics](https://jappes0815.github.io/ML4B/text_2017_5.html)
 
-<img src="https://jappes0815.github.io/ML4B/Papers_Years.PNG" width= 300 hight= 140/>
+<a href="https://jappes0815.github.io/ML4B/Papers_Years.PNG"><img src="https://jappes0815.github.io/ML4B/Papers_Years.PNG" width= 300 hight= 140/></a>
 
 ### Author analysis
 - [Fai Tao text with 3 Topics](https://jappes0815.github.io/ML4B/text_Fei_Tao.html)
 - [Qiang Liu with 3 Topics](https://jappes0815.github.io/ML4B/text_Qiang_Liu.html)
 - [Luca Fumagalli with 3 Topics](https://jappes0815.github.io/ML4B/text_Luca_Fumagalli.html )
 
-<img src="https://jappes0815.github.io/ML4B/Papers_Authors.PNG" width= 300 hight= 140/>
+<a href="https://jappes0815.github.io/ML4B/Papers_Authors.PNG"><img src="https://jappes0815.github.io/ML4B/Papers_Authors.PNG" width= 300 hight= 140/></a>
 
 ### Paper type analysis
 - [Conference paper text with 10 Topics](https://jappes0815.github.io/ML4B/text_conferencePaper.html)
@@ -46,5 +46,5 @@ The analysis down below link to the visualized Topic models. There you can explo
 - [Journal article text with 10 Topics](https://jappes0815.github.io/ML4B/text_journalArticle.html)
 - [Journal article text with 5 Topics](https://jappes0815.github.io/ML4B/text_journalArticle_5.html)
 
-<img src="https://jappes0815.github.io/ML4B/Papers_Type.PNG" width= 300 hight= 140/>
+<a href="https://jappes0815.github.io/ML4B/Papers_Type.PNG"><img src="https://jappes0815.github.io/ML4B/Papers_Type.PNG" width= 300 hight= 140/></a>
 
