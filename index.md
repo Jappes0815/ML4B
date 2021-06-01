@@ -10,7 +10,7 @@ The analysis down below link to the visualized Topic models. There you can explo
 - Use the slide on the top right corner to adjust the ratio on red to blue.
 
 
-<img src="https://jappes0815.github.io/ML4B/LDAvis_picture.png" alt="hi" class="inline" width="200" height="120"/>
+<img src="https://jappes0815.github.io/ML4B/LDAvis_picture.png" alt="hi" class="inline" width="2000" height="1200"/>
 
 ### Further feature selection
 
